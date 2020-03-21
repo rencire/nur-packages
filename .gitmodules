@@ -1,0 +1,3 @@
+[submodule "pkgs/neovim-nix"]
+	path = pkgs/neovim-nix
+	url = https://github.com/rencire/neovim-nix

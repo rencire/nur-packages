@@ -4,7 +4,7 @@ sudo: false
 
 env:
   global:
-    - CACHIX_CACHE=rencire
+    - CACHIX_CACHE=
     - NUR_REPO=rencire
 
 matrix:

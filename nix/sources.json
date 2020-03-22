@@ -1,4 +1,16 @@
 {
+    "neovim-nix": {
+        "branch": "master",
+        "description": "Custom nix package of neovim",
+        "homepage": null,
+        "owner": "rencire",
+        "repo": "neovim-nix",
+        "rev": "f4f68c8ae91a4facd1813354ccb2b0aa518adf00",
+        "sha256": "11lym3f2m3n7va9dz0sxnsf536gqgfkwvmggk0gfm1s6fpyf5frk",
+        "type": "tarball",
+        "url": "https://github.com/rencire/neovim-nix/archive/f4f68c8ae91a4facd1813354ccb2b0aa518adf00.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
     "niv": {
         "branch": "master",
         "description": "Easy dependency management for Nix projects",

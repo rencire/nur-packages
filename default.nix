@@ -7,8 +7,6 @@
 #     nix-build -A mypackage
 
 { pkgs ? import <nixpkgs> {}
-, sources ? import ./nix/sources.nix
-, pkgs-unstable ? import sources.pkgs-unstable {}
 }:
 {
   # The `lib`, `modules`, and `overlay` names are special
@@ -16,7 +14,7 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  neovim = pkgs.callPackage sources.neovim-nix { inherit (pkgs-unstable) neovim; };
+  neovim = pkgs.callPackage ./pkgs/neovim { inherit (pkgs) lib neovim; };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }

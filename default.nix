@@ -10,11 +10,11 @@
 }:
 {
   # The `lib`, `modules`, and `overlay` names are special
-  lib = import ./lib { inherit pkgs; }; # functions
-  modules = import ./modules; # NixOS modules
-  overlays = import ./overlays; # nixpkgs overlays
+  #lib = import ./lib { inherit pkgs; }; # functions
+  #modules = import ./modules; # NixOS modules
+  #overlays = import ./overlays; # nixpkgs overlays
 
-  neovim = pkgs.callPackage ./pkgs/neovim { inherit (pkgs) lib neovim; };
+  neovim = import ./pkgs/neovim { inherit (pkgs) lib neovim; };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
